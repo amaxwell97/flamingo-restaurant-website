@@ -1,0 +1,1 @@
+const navContainer = document.getElementsByClassName('nav-container');
