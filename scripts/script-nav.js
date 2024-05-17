@@ -10,3 +10,6 @@ const navTabsPara = document.createElement('p');
 const navLogoContainer = document.createElement('div');
 const navLogoImg = document.createElement('img');
 const navButtonsContainer = document.createElement('div');
+
+navLogoImg.src = '/images/flamingo-logo.png';
+
