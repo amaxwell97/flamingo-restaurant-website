@@ -10,7 +10,7 @@ html {
 }
 
 .nav-container {
-    background-color: aqua;
+    background-color: #31cbb8;
     width: 100%;
     height: 50px;
     margin: 0 auto 0;
@@ -18,6 +18,23 @@ html {
     justify-content: space-around;
 }
 
+.nav-container > * {
+    width: 32%;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-logo > img {
-    width: 10%;
+    height: 85%;
 }
