@@ -17,3 +17,7 @@ html {
     display: flex;
     justify-content: space-around;
 }
+
+.nav-logo > img {
+    width: 10%;
+}
