@@ -2,6 +2,7 @@ const homeFoodVideoContainer = document.getElementsByClassName('food-vid-contain
 const homeFoodVideoElement = document.createElement('video');
 const homeFoodVideoSource = document.createElement('source');
 
+homeFoodVideoElement.setAttribute('autoplay', '');
 homeFoodVideoSource.src = '/images/mexican-food-los-muertos-crew.mp4';
 
 const addVideo = () => {
