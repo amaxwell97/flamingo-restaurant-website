@@ -86,3 +86,9 @@ html {
 .food-vid-container video {
     width: 100%;
 }
+
+.food-vid-container .menu-btn {
+    position: relative;
+    top: -10px;
+    left: 50%;
+}
