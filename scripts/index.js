@@ -17,9 +17,14 @@ const homeFoodVideoSource = document.createElement('source');
 homeFoodVideoElement.setAttribute('autoplay', '');
 homeFoodVideoSource.src = '/images/mexican-food-los-muertos-crew.mp4';
 
+const menuBtn = document.createElement('button');
+menuBtn.innerText = 'MENU';
+menuBtn.classList.add('menu-btn');
+
 const addVideo = () => {
     homeFoodVideoContainer.append(homeFoodVideoElement);
     homeFoodVideoElement.append(homeFoodVideoSource);
+    homeFoodVideoContainer.append(menuBtn);
 }
 
 window.addEventListener('load', () => {
