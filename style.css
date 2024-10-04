@@ -88,7 +88,12 @@ html {
 }
 
 .food-vid-container .menu-btn {
+    background-color: #31cbb8;
+    border: none;
+    border-radius: 20px;
     position: relative;
-    top: -10px;
-    left: 50%;
+    top: -25px;
+    left: 40%;
+    height: 40px;
+    width: 130px;
 }
