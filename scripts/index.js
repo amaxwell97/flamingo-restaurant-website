@@ -30,3 +30,16 @@ const addVideo = () => {
 window.addEventListener('load', () => {
     addVideo();
 })
+
+// Create and insert home page welcome section
+// const homeWelcomeSectionContainer = document.getElementsByClassName('welcome-section-container')[0];
+
+// const homeWelcomeSectionLeftCol = document.createElement('div');
+// const homeWelcomeSectionLeftColHeadline = document.createElement('h1');
+// const homeWelcomeSectionLeftColPara = document.createElement('p');
+// homeWelcomeSectionLeftCol.classList.add('welcome-left-col');
+
+
+// const homeWelcomeSectionRightCol = document.createElement('div');
+// homeWelcomeSectionRightCol.classList.add('welcome-right-col');
+
