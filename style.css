@@ -82,18 +82,113 @@ html {
     width: 100%;
     height: 700px;
 }
-
 .food-vid-container video {
     width: 100%;
 }
-
 .food-vid-container .menu-btn {
     background-color: #31cbb8;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     position: relative;
     top: -25px;
     left: 40%;
     height: 40px;
+    width: 130px;
+}
+
+/*2 column welcome section HOMEPAGE - heading 1, paragraph, image*/
+.welcome-section-container {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+.welcome-left-col {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.welcome-left-col h2 {
+    color: #68c28c;
+}
+.welcome-right-col {
+    flex: 1;
+    padding: 20px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.flamingo-img {
+    height: 100%;
+}
+
+
+/* Footer; 2 rows; 1st row with phone #, address, hours, Google Maps; 2nd row split into 3 columns */
+.foot-container {
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.foot-hours {
+    flex: 1;
+    padding: 20px 20px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.foot-map {
+    flex: 1;
+    padding: 20px;
+}
+.foot-bar {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.foot-bar > .foot-social {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+.foot-bar > .foot-social > i {
+    font-size: 30px;
+}
+.foot-bar > .foot-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-bar > .foot-logo > img {
+    height: 80%;
+}
+.foot-bar > .foot-buttons {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+.foot-bar > .foot-buttons > button {
+    height: 35px;
+    border-radius: 10px;
+}
+.foot-bar > .foot-buttons > .foot-menu-btn {
+    background-color: transparent;
+    border: solid 2px #DE7FAE;
+    color: #DE7FAE;
+    width: 70px;
+}
+.foot-bar > .foot-buttons > .foot-order-btn {
+    background-color: #67C28B;
+    border: transparent;
+    color: #fff;
     width: 130px;
 }
