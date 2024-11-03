@@ -96,6 +96,7 @@ html {
     width: 130px;
 }
 
+
 /*2 column welcome section HOMEPAGE - heading 1, paragraph, image*/
 .welcome-section-container {
     display: flex;
@@ -123,6 +124,25 @@ html {
 }
 .flamingo-img {
     height: 100%;
+}
+
+
+/* 2 column display menu - heading 3; 2nd column broken into 3 columns & 3 rows for image display */
+.home-page-menu-container {
+    display: flex;
+}
+.menu-category-selection-container {
+    flex: 1;
+}
+.home-page-menu-img-display {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    flex: 4;
+}
+.home-page-menu-img-display > img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 
@@ -191,4 +211,39 @@ html {
     border: transparent;
     color: #fff;
     width: 130px;
+}
+
+/* Category selection - 2 rows */
+.menu-category-selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0px;
+}
+.menu-category-selection {
+    display: flex;
+    justify-content: space-around;
+}
+.category-selection-btn {
+    background-color: transparent;
+    border: transparent;
+    font-size: 15px;
+    font-weight: 400;
+}
+.category-selection-btn:hover {
+    font-weight: 600;
+}
+/* Div section to display items */
+.menu-page-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 20px 30px;
+    padding: 0px 50px;
+}
+.menu-page-item {
+    max-width: 300px;
+}
+.menu-page-item-container > img {
+    width: 100%;
 }
