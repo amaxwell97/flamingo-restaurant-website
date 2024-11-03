@@ -3,31 +3,69 @@
     <head>
         <meta charset="utf-8">
         <title>Menu</title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="/scripts/menu.js" type="module" defer></script>
     </head>
     <body>
         <!--Nav w/ address & phone #; logo centered; tabs: Home, Menu, Contact, & Order Online-->
+        <!-- <header>
+            <div class="header-bar">
+                <p>1029 PLEASANT ST., DEKALB, IL</p>
+                <i class="fa-solid fa-circle"></i>
+                <p>(815) 901-0049</p>
+            </div>
+            <div class="nav-container">
+                <ul class="nav-tabs-container">
+                    <a href="/html/hours-location-page.html" class="nav-item">
+                        <li>HOURS & LOCATION</li>
+                    </a>
+                    <a href="/html/menu-page.html" class="nav-item">
+                        <li>MENU</li>
+                    </a>
+                    <a href="/html/contact.html" class="nav-item">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+                <div class="nav-logo">
+                    <img src="/images/flamingo-logo.png" alt="">
+                </div>
+                <div class="nav-buttons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <button>ORDER</button>
+                </div>
+            </div>
+        </header> -->
         <!--Category selection - 2 rows-->
+        <div class="menu-category-selection-container">
+            <div class="menu-category-selection">
+                <button class="category-selection-btn" type="button" data-id="popular">POPULAR</button>
+                <button class="category-selection-btn" type="button" data-id="breakfast">DESAYUNO / BREAKFAST</button>
+                <button class="category-selection-btn" type="button" data-id="lunch">ALMUERZO / LUNCH</button>
+                <button class="category-selection-btn" type="button" data-id="dinner">CENA / DINNER</button>
+            </div>
+            <div class="menu-category-selection">
+                <button class="category-selection-btn" type="button" data-id="drinks">BEBIDAS / DRINKS</button>
+                <button class="category-selection-btn" type="button" data-id="dessert">NIEVES & POSTRE / ICE CREAM & DESSERT</button>
+                <button class="category-selection-btn" type="button" data-id="alacarte">À LA CARTE</button>
+            </div>
+        </div>
             <!--7 buttons for each menu-category-->
         <!--Div section to display items-->
         <div class="menu-page-container">
-            <!--Article element wrapping each item-->
-            <article class="menu-page-item">
-                <!--Heading 2-->
+            <!-- <article class="menu-page-item">
                 <div class="menu-page-item-title-container">
                     <h2 class="menu-page-item-title">Flamingo Breakfast</h2>
                     <hr>
                 </div>
-                <!--Paragrph for descriptions & prices-->
                 <div class="menu-page-item-description">
                     <p>Dos huevos, chilaquiles, arroz, frijoles y bistec. | Two eggs, chilaquiles, rice, beans, and steak.</p>
                     <p>$26.99</p>
                 </div>
-                <!--Images of selected item-->
                 <div class="menu-page-item-container">
                     <img src="/images/menu/flamingo-breakfast.png" alt="" class="menu-page-item-image">
-                    <!-- <img src="" alt="" class="menu-page-item-image"> -->
                 </div>
-            </article>
+            </article> -->
         </div>
         <!--Footer; 2 rows-->
             <!--1st row with phone #, address, hours, Google Maps-->
