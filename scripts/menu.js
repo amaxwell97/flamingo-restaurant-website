@@ -1,6 +1,7 @@
 
 import {menu} from './modules.js';
 console.log(menu);
+import { initMap } from './modules.js';
 
 const menuPageContainer = document.querySelector(".menu-page-container");
 const categorySelectionBtn = document.querySelectorAll(".category-selection-btn");
@@ -50,3 +51,6 @@ function displayMenuItems(menuItems){
     displayMenu = displayMenu.join("");
     menuPageContainer.innerHTML = displayMenu
 }
+
+// Calling function to have Google Maps display
+initMap();
