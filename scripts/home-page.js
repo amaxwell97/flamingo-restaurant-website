@@ -1,8 +1,34 @@
 // HOME PAGE
 
+// Importing modules from modules file
 import {menu} from './modules.js';
-console.log(menu);
+import { initMap } from './modules.js';
 
+
+// Add video to the top of the homepage
+const homeFoodVideoContainer = document.getElementsByClassName('food-vid-container')[0];
+const homeFoodVideoElement = document.createElement('video');
+const homeFoodVideoSource = document.createElement('source');
+
+homeFoodVideoElement.setAttribute('autoplay', '');
+homeFoodVideoSource.src = '/images/mexican-food-los-muertos-crew.mp4';
+
+const menuBtn = document.createElement('button');
+menuBtn.innerText = 'MENU';
+menuBtn.classList.add('menu-btn');
+
+const addVideo = () => {
+    homeFoodVideoContainer.append(homeFoodVideoElement);
+    homeFoodVideoElement.append(homeFoodVideoSource);
+    homeFoodVideoContainer.append(menuBtn);
+}
+
+window.addEventListener('load', () => {
+    addVideo();
+})
+
+
+// Displaying menu on home page and tagging category buttons
 const homePageMenuImgDisplay = document.querySelector(".home-page-menu-img-display");
 const categorySelectionBtn = document.querySelectorAll(".category-selection-btn");
 
@@ -29,3 +55,7 @@ function displayMenuItems(menuItems){
     displayMenu = displayMenu.join("");
     homePageMenuImgDisplay.innerHTML = displayMenu;
 }
+
+
+// Calling function to have Google Maps display
+initMap();
