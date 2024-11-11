@@ -4,8 +4,13 @@
         <meta charset="utf-8">
         <title>Flamingo</title>
         <link rel="stylesheet" href="/style.css">
-        <script src="/scripts/index.js" defer></script>
         <script src="/scripts/home-page.js" type="module" defer></script>
+        <script>
+            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+              key: "AIzaSyAzm_qNlnn-to12a_B_5YyQsG0dKtj17Tg",
+              v: "weekly",
+            });
+        </script>
         <script src="https://kit.fontawesome.com/d3672b852a.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -19,15 +24,15 @@
         <!--Nav w/ tabs: Hours & Location, Menu, & Contact; logo centered; social media icons & Order Online button on right-->
             <div class="nav-container">
                 <ul class="nav-tabs-container">
-                    <a href="/html/hours-location-page.html" class="nav-item">
-                        <li>HOURS & LOCATION</li>
-                    </a>
-                    <a href="/html/menu-page.html" class="nav-item">
-                        <li>MENU</li>
-                    </a>
-                    <a href="/html/contact.html" class="nav-item">
-                        <li>CONTACT</li>
-                    </a>
+                    <li>
+                        <a href="/html/menu-page.html" class="nav-item">MENU</a>
+                    </li>
+                    <li>
+                        <a href="/html/hours-location-page.html" class="nav-item">HOURS & LOCATION</a>
+                    </li>
+                    <li>
+                        <a href="/html/contact.html" class="nav-item">CONTACT</a>
+                    </li>
                 </ul>
                 <div class="nav-logo">
                     <img src="/images/flamingo-logo.png" alt="">
@@ -72,11 +77,26 @@
                 <button class="category-selection-btn" type="button" data-id="alacarte">À LA CARTE</button>
             </div>
             <div class="home-page-menu-img-display">
-                
+
             </div>
         </div>
         <!--Reviews section - heading 2; blank div-->
+        <div class="review-section-container">
+            <div class="review-section-title">
+                <h2>HEAR FROM OUR CUSTOMERS</h2>
+            </div>
+            <div class="review-section">
+
+            </div>
+        </div>
         <!--Social media icons - heading 2-->
+        <div class="social-media-section-container">
+            <h2 class="social-media-title">FOLLOW & TAG US</h2>
+            <div class="social-media-icon-container">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
         <!--Footer; 2 rows; 1st row with phone #, address, hours, Google Maps; 2nd row split into 3 columns-->
         <footer>
             <div class="foot-container">
@@ -88,7 +108,7 @@
                     <p>Friday - Saturday 10am - 11pm</p>
                 </div>
                 <div class="foot-map">
-
+                    <div id="map"></div>
                 </div>
             </div>
             <div class="foot-bar">
