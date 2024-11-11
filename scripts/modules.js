@@ -1,4 +1,5 @@
 
+// Menu object with items
 export const menu = [
     {
         title: "flamingo breakfast",
@@ -43,3 +44,18 @@ export const menu = [
         desc: "Rojos, verdes, rajas, dulce.",
     },
 ]
+
+
+// Google Maps API
+const googleMapsApiKey = 'AIzaSyAzm_qNlnn-to12a_B_5YyQsG0dKtj17Tg';
+
+let map;
+
+export async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: 41.93306836981826, lng: -88.74000441920694 },
+    zoom: 17.8,
+  });
+}
