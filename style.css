@@ -34,9 +34,12 @@ html {
     padding: 12px 0px;
     display: flex;
     justify-content: space-around;
-    position: fixed;
+    /* position: fixed; */
 }
-.nav-container > * {
+.nav-container > ul {
+    width: 32%;
+}
+.nav-container > div {
     width: 32%;
 }
 .nav-tabs-container  {
@@ -49,6 +52,9 @@ html {
 }
 .nav-item {
     color: #000;
+}
+.nav-item:hover {
+    font-weight: 800;
 }
 .nav-logo {
     display: flex;
@@ -146,10 +152,47 @@ html {
 }
 
 
+/* Reviews section - heading 2; blank div */
+.review-section-container {
+    margin-top: 80px;
+}
+.review-section-title {
+    padding-bottom: 30px;
+    text-align: center;
+}
+.review-section {
+    background-image: url("/images/ice-cream-shop-selection.jpg");
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+
+/* Social media icons - heading 2 */
+.social-media-section-container {
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.social-media-title {
+    /* text-align: center; */
+}
+.social-media-icon-container > i {
+    font-size: 50px;
+    padding: 0px 5px;
+}
+
+
 /* Footer; 2 rows; 1st row with phone #, address, hours, Google Maps; 2nd row split into 3 columns */
 .foot-container {
     background-color: #fff;
-    height: 200px;
+    height: 250px;
     width: 100%;
     display: flex;
 }
@@ -164,6 +207,10 @@ html {
     flex: 1;
     padding: 20px;
 }
+#map {
+    height: 100%;
+    width: 70%;
+  }
 .foot-bar {
     height: 50px;
     display: flex;
@@ -213,6 +260,10 @@ html {
     width: 130px;
 }
 
+
+
+/* MENU PAGE */
+
 /* Category selection - 2 rows */
 .menu-category-selection-container {
     display: flex;
@@ -239,11 +290,83 @@ html {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-gap: 20px 30px;
+    margin: 50px 0px;
     padding: 0px 50px;
 }
 .menu-page-item {
     max-width: 300px;
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.menu-page-item-container > img {
+.menu-page-item-title-container {
+    /* flex: 1; */
+    /* height: 25%; */
+}
+.menu-page-item-description {
+    /* flex: 1; */
+    /* height: 25%; */
+}
+.menu-page-item-container {
+    /* flex: 4; */
+}
+.menu-page-item-image {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* HOURS & LOCATION PAGE */
+
+.hours-location-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.hours-location-container {
+    display: flex;
+    justify-content: space-around;
+    min-height: 400px;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+.hours-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.hours-title {
+    flex: 1;
+}
+.hours-wrapper {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.location-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.location-title {
+    flex: 1;
+}
+.location-address {
+    flex: 1;
+}
+.map-container {
+    flex: 8;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
